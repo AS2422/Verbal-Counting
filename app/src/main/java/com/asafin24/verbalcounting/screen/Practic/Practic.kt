@@ -3,14 +3,17 @@ package com.asafin24.verbalcounting.screen.Practic
 
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.asafin24.verbalcounting.APP
+import com.asafin24.verbalcounting.MainActivity
 import com.asafin24.verbalcounting.R
 import com.asafin24.verbalcounting.databinding.FragmentPracticBinding
+import kotlinx.android.synthetic.main.activity_main.*
 import java.util.concurrent.TimeUnit
 import kotlin.random.Random
 
@@ -46,6 +49,8 @@ class Practic : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+//        mainBottomNavView.visibility = View.GONE
 
         typeGame = arguments?.getSerializable("typeGame") as String
         complexity = arguments?.getSerializable("complexity") as String
@@ -164,6 +169,11 @@ class Practic : Fragment() {
             }
         }
         super.onStart()
+    }
+
+    override fun onStop() {
+        timer?.cancel()
+        super.onStop()
     }
 
     fun randomNumber() {

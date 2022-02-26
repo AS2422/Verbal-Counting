@@ -29,7 +29,7 @@ class ResultPractic : Fragment() {
     lateinit var mistakes: ArrayList<String>
 
     @SuppressLint("SimpleDateFormat")
-    val date = SimpleDateFormat("dd.M.yyyy").format(Date())
+    val date = SimpleDateFormat("dd.MM.yyyy").format(Date())
 
 
     override fun onCreateView(
@@ -64,10 +64,7 @@ class ResultPractic : Fragment() {
         }
 
         showMistakes()
-
-        binding.button.setOnClickListener {
-            init()
-        }
+        init()
 
     }
 
