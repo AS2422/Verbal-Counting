@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuMainFragment">
+
+
+    <fragment
+        android:id="@+id/menuMainFragment"
+        android:name="com.asafin24.verbalcounting.screen.Main.Main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_main_to_practingSetting"
+            app:destination="@id/practingSetting" />
+        <action
+            android:id="@+id/action_menuMainFragment_to_setting"
+            app:destination="@id/setting" />
+    </fragment>
+    <fragment
+        android:id="@+id/practingSetting"
+        android:name="com.asafin24.verbalcounting.screen.PracticSetting.PractingSetting"
+        android:label="fragment_practing_setting"
+        tools:layout="@layout/fragment_practing_setting" >
+        <action
+            android:id="@+id/action_practingSetting_to_practic"
+            app:destination="@id/practic" />
+        <action
+            android:id="@+id/action_practingSetting_to_menuMainFragment"
+            app:destination="@id/menuMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/practic"
+        android:name="com.asafin24.verbalcounting.screen.Practic.Practic"
+        android:label="fragment_practic"
+        tools:layout="@layout/fragment_practic" >
+        <action
+            android:id="@+id/action_practic_to_resultPractic"
+            app:destination="@id/resultPractic" />
+        <action
+            android:id="@+id/action_practic_to_menuProgressFragment"
+            app:destination="@id/menuProgressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultPractic"
+        android:name="com.asafin24.verbalcounting.screen.ResultPractic.ResultPractic"
+        android:label="fragment_result_practic"
+        tools:layout="@layout/fragment_result_practic" >
+        <action
+            android:id="@+id/action_resultPractic_to_menuMainFragment"
+            app:destination="@id/menuMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuProgressFragment"
+        android:name="com.asafin24.verbalcounting.screen.Progress.Progress"
+        android:label="fragment_progress"
+        tools:layout="@layout/fragment_progress" >
+        <action
+            android:id="@+id/action_menuProgressFragment_to_historyPractic"
+            app:destination="@id/historyPractic" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyPractic"
+        android:name="com.asafin24.verbalcounting.screen.HistoryPractic.HistoryPractic"
+        android:label="fragment_history_practic"
+        tools:layout="@layout/fragment_history_practic" >
+        <action
+            android:id="@+id/action_historyPractic_to_menuProgressFragment"
+            app:destination="@id/menuProgressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.asafin24.verbalcounting.screen.Setting.Setting"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_setting_to_menuMainFragment"
+            app:destination="@id/menuMainFragment" />
+    </fragment>
+</navigation>

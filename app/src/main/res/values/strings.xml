@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">VerbalCounting</string>
+    <string name="main">Главная</string>
+    <string name="Progress">Прогресс</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="parameters">Параметры</string>
+    <string name="on_time">На время</string>
+    <string name="on_numbers">На количество</string>
+    <string name="minutes">минуты</string>
+    <string name="numbers">кол-во</string>
+    <string name="Complexity">Сложность</string>
+    <string name="one_digit">Однозначные</string>
+    <string name="two_digit">Двузначные</string>
+    <string name="three_digit">Трёхзначные</string>
+    <string name="operations">Операции</string>
+    <string name="choose_all">Выбрать всё</string>
+    <string name="summ">Сложение</string>
+    <string name="decrement">Вычитание</string>
+    <string name="multiplication">Умножение</string>
+    <string name="division">Деление</string>
+    <string name="start">Старт</string>
+    <string name="formatted_time">%02d:%02d</string>
+    <string name="_1">1</string>
+    <string name="you_result">Ваш результат</string>
+    <string name="of">из</string>
+    <string name="mistakes">Ошибки</string>
+    <string name="settings">Настройки</string>
+    <string name="dark_theme">Тёмная тема</string>
+    <string name="about_app">О приложении</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="date">Дата</string>
+    <string name="type_game">Тип игры</string>
+    <string name="result">Результат</string>
+</resources>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.PracticSetting.PractingSetting">
+
+
+    <TextView
+        android:id="@+id/tv_verbalcountname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/parameters"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:id="@+id/rg_type_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="70dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_verbalcountname"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp">
+
+        <RadioButton
+            android:id="@+id/rb_on_time"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/on_time"
+            tools:layout_editor_absoluteX="67dp"
+            tools:layout_editor_absoluteY="118dp" />
+
+        <RadioButton
+            android:id="@+id/rb_on_number"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/on_numbers"
+            tools:layout_editor_absoluteX="195dp"
+            tools:layout_editor_absoluteY="126dp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_minutes"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/minutes"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="51dp"
+        app:layout_constraintStart_toEndOf="@+id/rg_type_game"
+        app:layout_constraintTop_toTopOf="@+id/rg_type_game"
+        android:layout_marginStart="20sp"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:id="@+id/et_numbers"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/numbers"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="51dp"
+        app:layout_constraintStart_toEndOf="@+id/rg_type_game"
+        app:layout_constraintBottom_toBottomOf="@+id/rg_type_game"
+        android:layout_marginStart="20sp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_complexity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Complexity"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="122dp"
+        app:layout_constraintTop_toBottomOf="@+id/rg_type_game"
+        app:layout_constraintStart_toStartOf="@+id/rg_type_game"
+        android:layout_marginTop="25dp"/>
+
+    <RadioGroup
+        android:id="@+id/rg_complexity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="174dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_complexity"
+        app:layout_constraintStart_toStartOf="@+id/tv_complexity">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/one_digit"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/two_digit"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/three_digit"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_choose_operations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operations"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="341dp"
+        app:layout_constraintTop_toBottomOf="@+id/rg_complexity"
+        app:layout_constraintStart_toStartOf="@+id/rg_type_game"
+        android:layout_marginTop="20dp"/>
+
+    <CheckBox
+        android:id="@+id/cb_all"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/choose_all"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="376dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_choose_operations"
+        app:layout_constraintStart_toStartOf="@+id/tv_choose_operations"/>
+
+    <CheckBox
+        android:id="@+id/cb_summ"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/summ"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="413dp"
+        app:layout_constraintTop_toBottomOf="@+id/cb_all"
+        app:layout_constraintStart_toStartOf="@+id/tv_choose_operations"/>
+
+    <CheckBox
+        android:id="@+id/cb_decrement"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/decrement"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="455dp"
+        app:layout_constraintTop_toBottomOf="@+id/cb_summ"
+        app:layout_constraintStart_toStartOf="@+id/tv_choose_operations"/>
+
+    <CheckBox
+        android:id="@+id/cb_multiplication"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/multiplication"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="493dp"
+        app:layout_constraintTop_toBottomOf="@+id/cb_decrement"
+        app:layout_constraintStart_toStartOf="@+id/tv_choose_operations"/>
+
+    <CheckBox
+        android:id="@+id/cb_division"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/division"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="543dp"
+        app:layout_constraintTop_toBottomOf="@+id/cb_multiplication"
+        app:layout_constraintStart_toStartOf="@+id/tv_choose_operations"
+        />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="604dp"
+        app:layout_constraintTop_toBottomOf="@+id/cb_division"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="40dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/drawable/button.xml" value="0.357" />
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/drawable/button_text.xml" value="0.357" />
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/drawable/gradient_buttom.xml" value="0.357" />
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/drawable/gradient_button_text.xml" value="0.196" />
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/drawable/ic_back.xml" value="0.22" />
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/drawable/ic_play.xml" value="0.357" />
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/drawable/ic_setting.xml" value="0.357" />
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/layout/fragment_history_practic.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/layout/fragment_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/layout/fragment_practic.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/layout/fragment_practing_setting.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/layout/fragment_progress.xml" value="0.27717391304347827" />
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/layout/fragment_result_practic.xml" value="0.18802083333333333" />
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/layout/fragment_setting.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/layout/history_practics_item.xml" value="0.25" />
+        <entry key="..\:/Android/VerbalCounting/app/src/main/res/menu/bottom_menu.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
